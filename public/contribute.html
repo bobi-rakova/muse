@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mapping Jobs</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript"  src="js/jquery-2.1.1.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Mapping Jobs/Stories</h3>
+              <ul class="nav masthead-nav">
+                <li><a href="./index.html">Why</a></li>
+                <li><a href="./explore.html">Explore</a></li>
+                <li class="active"><a href="#">Contribute</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">What job/experience do you need in the world?</h1>
+          </div>
+
+            <div id="submit">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="badge" style="background-color: #428bca;">1</span></span>
+                <input id="title" type="text" class="form-control" placeholder="Give it a title">
+              </div>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="badge" style="background-color: #5cb85c;">2</span></span>
+                <textarea id="description" type="text" class="form-control" style="height: 6em;" placeholder="Add a description"></textarea>
+              </div>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="badge" style="background-color: #5bc0de;">3</span></span>
+                <textarea id="skillset" type="text" class="form-control" placeholder="Skillset"></textarea>
+              </div>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="badge" style="background-color: #f0ad4e;">4</span></span>
+                <input id="name" type="text" class="form-control" placeholder="Your name">
+              </div>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="badge" style="background-color: #d9534f;">5</span></span>
+                <input id="email" type="text" class="form-control" placeholder="Your email">
+              </div>
+              <div>
+                <button id="submit-btn" type="button" class="btn btn-lg btn-success">Submit</button>
+              </div>
+            </div>
+
+            <div id="thank-you-box" style="display: none;">
+              <h2>Thank You!</h2>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      $("#submit-btn").click( function() {
+        var data = { 
+          name: $("#name").val(), 
+          email: $("#email").val(),
+          title: $("#title").val(),
+          description: $("#description").val(),
+          skillset: $("#skillset").val()
+        }
+        $.post( "/add-new", data, function( data ) {
+          $( "#thank-you-box" ).show(500);
+          $( "#submit" ).fadeTo("slow", 0.5);
+        });
+      })
+      </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "mapping-jobs",
+  "version": "0.0.0",
+  "description": "mapping-jobs ============",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bobi-rakova/mapping-jobs.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/bobi-rakova/mapping-jobs/issues"
+  },
+  "dependencies": {
+    "logfmt": "~1.1.2",
+    "express": "~4.6.1",
+    "redis": "~0.11.0",
+    "body-parser": "~1.5.0",
+    "url": "~0.10.1"
+  }
+}
