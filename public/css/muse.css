@@ -17,6 +17,32 @@ body, p, h1, h2 {
 		opacity: .5;
 }​
 
+.x.axis line {
+    shape-rendering: auto;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.muse-btn{
+    text-transform:uppercase; 
+  font-weight:bold; 
+  border-radius:2px; 
+  background-color:transparent; 
+  border:3px solid #333; 
+  padding: 6px 12px;
+  transition:all 1s ease; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: 900;
+}
+.muse-btn:hover, button:hover {
+    outline:0;  
+  color:#FFF; 
+  background-color: #DCDCDC;
+}
+
 
 
 

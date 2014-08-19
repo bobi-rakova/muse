@@ -7,42 +7,29 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<script type="text/javascript"  src="js/main-d3.js"></script>
-    <link href="css/muse.css" rel="stylesheet">
+    	<link href="css/muse.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-		<style>
-
-		.x.axis line {
-			shape-rendering: auto;
-		}
-
-		.line {
-			fill: none;
-			stroke: #000;
-			stroke-width: 1.5px;
-		}
-		.lineChannel2 {
-			fill: none;
-			stroke: red;
-			stroke-width: 1.5px;
-		}
-
-		</style>
   </head>
 
   <body>
 		<script type="text/javascript" src="js/highcharts.js"></script>
 		<script type="text/javascript" src="js/modules/exporting.js"></script>
-		<img class="logo" src="images/divinediva-logo-flat.png" />
+		<img class="logo" src="images/divinediva-logo-flat.png" />		
+    	
 		<div class="main-container">
-		<h1>Connecting ideas, self-improvement and resources for social good.</h1>
-		<ol>
-			<li>Position 1: Left Ear(A1), Range: 0.0 - 1682.0 in microvolts </li>
-			<li>Position 2: Left Forehead(FP1), Range: 0.0 - 1682.0 in microvolts </li>
-			<li>Position 3: Right Forehead(FP2), Range: 0.0 - 1682.0 in microvolts </li>
-			<li>Position 4: Right Ear(A2), Range: 0.0 - 1682.0 in microvolts </li>
-		</ol>
+			<h1>Connecting ideas, self-improvement and resources for social good.</h1>
+			<div>
+	        	<button type="button" class="muse-btn">Record</button>
+	        	<button type="button" class="muse-btn">Analyze</button>
+	        	<button type="button" class="muse-btn">Compare</button>
+	     	</div>
+			<ol>
+				<li style="color: #F7931E; font-weight: 900;">Position 1: Left Ear(A1), Range: 0.0 - 1682.0 in microvolts </li>
+				<li style="color: #92278F; font-weight: 900;">Position 2: Left Forehead(FP1), Range: 0.0 - 1682.0 in microvolts </li>
+				<li style="color: #0071BB; font-weight: 900;">Position 3: Right Forehead(FP2), Range: 0.0 - 1682.0 in microvolts </li>
+				<li style="color: #00A651; font-weight: 900;">Position 4: Right Ear(A2), Range: 0.0 - 1682.0 in microvolts </li>
+			</ol>
 		</div>
-    <!--<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
 
   </body>
 </html>
