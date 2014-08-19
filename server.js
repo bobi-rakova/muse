@@ -24,7 +24,7 @@ udpPort.open();
 io.on('connection', function (socket) {
     console.log("socket.io connection");
   	socket.emit('news', { hello: 'world' });  
-
+/*
 	setInterval(function(){
 		var testData = {
 			address: "/muse/eeg",
@@ -32,7 +32,7 @@ io.on('connection', function (socket) {
 		}
 		socket.emit('news', testData); 
 	}, 1000);
-
+*/
   	// Listen for incoming OSC bundles.
 	udpPort.on("message", function (oscData) {
 		now = Date.now()

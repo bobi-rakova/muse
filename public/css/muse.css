@@ -14,7 +14,7 @@ body, p, h1, h2 {
     margin-left: -300px;
     width: 500px;
     height: 500px;
-		opacity: .5;
+	opacity: .3;
 }​
 
 .x.axis line {
@@ -41,6 +41,10 @@ body, p, h1, h2 {
     outline:0;  
   color:#FFF; 
   background-color: #DCDCDC;
+}
+
+p {
+    font-weight: 900;
 }
 
 

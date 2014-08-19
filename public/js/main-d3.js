@@ -15,7 +15,7 @@ function chart(domain, interpolation, tick) {
       .range([0, width]);
 
   var y = d3.scale.linear()
-      .domain([0, 1500])
+      .domain([0, 1700])
       .range([height, 0]);
 
   var line = d3.svg.line()
@@ -53,7 +53,7 @@ function chart(domain, interpolation, tick) {
       .style("text-anchor", "end")
       .text("microvolts");
 
-  var colors = ["#F7931E", "#92278F", "#0071BB", "#00A651"]
+  var colors = ["red", "#92278F", "#0071BB", "#00A651"]
 
   var path = aLineContainer
       .attr("clip-path", "url(#clip)")
