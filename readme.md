@@ -22,6 +22,8 @@ visualize your brainwave activity in the browser.
 * Serve the public folder however you like
 * You should be getting a live D3 visual of your brainwave EEG.
 
+![image](https://cloud.githubusercontent.com/assets/39191/4486882/c09f2fde-49ee-11e4-81c2-53c6039b585f.png)
+
 
 
 # Who
