@@ -15,6 +15,8 @@ visualize your brainwave activity in the browser.
 ![image](https://cloud.githubusercontent.com/assets/39191/4486873/75f7baaa-49ee-11e4-8828-60289bff5c7e.png)
 </a>
 
+![image](http://i.imgur.com/diQk2Gf.gif)
+
 # Running
 
 * Get the [muse headband](http://www.choosemuse.com/)
@@ -37,4 +39,5 @@ visualize your brainwave activity in the browser.
 
 - Inital app work: [bobi-rakova](https://github.com/bobi-rakova/muse)
 - Readme updates: [paulirish](https://github.com/paulirish/muse-node)
+- Animated GIF: [derekbreden](https://github.com/derekbreden/muse-node)
 - Updates to structure [JamesHagerman](https://github.com/JamesHagerman/muse-node)
