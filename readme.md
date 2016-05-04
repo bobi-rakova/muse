@@ -1,3 +1,10 @@
+Exploring the capabilities of the Muse Headband
+============
+
+https://sites.google.com/a/interaxon.ca/muse-developer-site/home
+
+Demo: https://www.youtube.com/watch?v=-lCQAi0NKIc
+
 muse-node
 =========
 
@@ -28,4 +35,6 @@ visualize your brainwave activity in the browser.
 
 # Who
 
-I didn't do anything except write a readme. [bobi-rakova](https://github.com/bobi-rakova/muse) did all the work.
+- Inital app work: [bobi-rakova](https://github.com/bobi-rakova/muse)
+- Readme updates: [paulirish](https://github.com/paulirish/muse-node)
+- Updates to structure [JamesHagerman](https://github.com/JamesHagerman/muse-node)
